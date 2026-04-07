@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+*.py[cod]
+
+# Local tool state
+.codex
+
+# OS/editor clutter
+.DS_Store
+Thumbs.db
