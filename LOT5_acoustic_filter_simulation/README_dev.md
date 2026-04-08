@@ -70,6 +70,12 @@ The main limitations are:
 - sensitivity to detailed geometry and loading still needs tighter constraint for realistic earplug configurations,
 - some reduced descriptions have only been validated on specific subproblems, not in every coupled situation.
 
+## Limits and improovements
+
+Although the codebase was developed following a class-based, object-oriented strategy, with systematic testing and FEM validation, many of the current example scripts could be turned into proper integration and non-regression tests. Refactoring in that direction would clearly improve the overall robustness and maintainability of the project.
+
+Some of the latest work packages also rely on fairly cumbersome code. While this could definitely be improved, it reflects a common trade-off between rapid prototyping and over-engineered development. A cleanup phase would be valuable, but at this stage it seems more relevant to prioritize the experimental development rather than spend too much time polishing the simulation code.
+
 ## Next Steps
 
 The next major step is measurement-informed refinement.

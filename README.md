@@ -71,6 +71,12 @@ This repository should be read as an engineering notebook and prototype workflow
 - Lot 5 is the main acoustic modeling contribution and the best technical entry point for code reuse.
 - The simulation workflow is already usable for exploratory studies, but some reduced parameters are still effective fits rather than fully identified physical quantities.
 
+### Limits and improovements
+
+Although the codebase was developed following a class-based, object-oriented strategy, with systematic testing and FEM validation, many of the current example scripts could be turned into proper integration and non-regression tests. Refactoring in that direction would clearly improve the overall robustness and maintainability of the project.
+
+Some of the latest work packages also rely on fairly cumbersome code. While this could definitely be improved, it reflects a common trade-off between rapid prototyping and over-engineered development. A cleanup phase would be valuable, but at this stage it seems more relevant to prioritize the experimental development rather than spend too much time polishing the simulation code.
+
 ## Quick Start With `uv`
 
 The simulation code lives in [LOT5_acoustic_filter_simulation](./LOT5_acoustic_filter_simulation).
@@ -145,9 +151,6 @@ The current framework already supports target-driven optimisation on reduced fil
 
 ## Perspectives and workpackage in dev
 
-Lot 6 will cover the experimental phase, combining the development of the measurement architecture and the
-  supporting tools: with an IEC 60318-4 coupler, ME2-type microphones, a 4-input sound card, and 3D printing
-  resources, the platform is intended to support both the construction of a three-microphone impedance tube and the
-  direct measurement of earplug insertion loss.
+Lot 6 will cover the experimental phase, combining the development of the measurement architecture and the supporting tools: with an IEC 60318-4 coupler, ME2-type microphones, a 4-input sound card, and 3D printing  resources, the platform is intended to support both the construction of a three-microphone impedance tube and the  direct measurement of earplug insertion loss.
 
 <img src="./assets/lot6.jpg" title="" alt="lot6" width="440">
